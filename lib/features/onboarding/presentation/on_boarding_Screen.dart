@@ -148,7 +148,7 @@ class _OnboardingScreenState extends State<OnboardingScreen> {
 
   void _handleActionButtonPress(BuildContext context) async {
     if (_isLastPage) {
-      context.go("/select_country");
+      context.push("/select_country");
     } else {
       _pageController.nextPage(
         duration: const Duration(milliseconds: 300),
@@ -157,7 +157,9 @@ class _OnboardingScreenState extends State<OnboardingScreen> {
     }
   }
 
-  Future<void> _navigateToLoginScreen(BuildContext context) async {}
+  Future<void> _navigateToLoginScreen(BuildContext context) async {
+    context.go('/select_country');
+  }
 
   bool get _isLastPage => _currentPage == _onboardingData.length - 1;
 }

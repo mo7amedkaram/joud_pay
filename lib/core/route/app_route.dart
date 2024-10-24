@@ -1,4 +1,5 @@
 import 'package:go_router/go_router.dart';
+import 'package:joud_pay/features/auth/presentation/get_location.dart';
 import 'package:joud_pay/features/onboarding/presentation/on_boarding_Screen.dart';
 import 'package:joud_pay/features/splash_screen/presentation/splash_screen.dart';
 
@@ -18,6 +19,10 @@ abstract class AppRoute {
       GoRoute(
         path: "/select_country",
         builder: (context, state) => const SelectCountryScreen(),
+      ),
+      GoRoute(
+        path: "/get_location",
+        builder: (context, state) => const GetLocationScareen(),
       ),
     ],
   );

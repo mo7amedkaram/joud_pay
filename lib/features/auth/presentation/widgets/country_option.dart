@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:go_router/go_router.dart';
 
 import '../../../../utils/app_style.dart';
 
@@ -78,7 +79,7 @@ class NextButton extends StatelessWidget {
           shape: RoundedRectangleBorder(borderRadius: BorderRadius.circular(5)),
         ),
         onPressed: () {
-          // Handle button press
+          context.push("/get_location");
         },
         child: const Text(
           'Next',
