@@ -1,4 +1,5 @@
 import 'package:go_router/go_router.dart';
+import 'package:joud_pay/features/auth/presentation/create_account_screen.dart';
 import 'package:joud_pay/features/auth/presentation/enter_otp_screen.dart';
 import 'package:joud_pay/features/auth/presentation/get_location.dart';
 import 'package:joud_pay/features/onboarding/presentation/on_boarding_Screen.dart';
@@ -33,6 +34,10 @@ abstract class AppRoute {
       GoRoute(
         path: "/enter_otp_screen",
         builder: (context, state) => const EnterOtpScreen(),
+      ),
+      GoRoute(
+        path: "/create_account_screen",
+        builder: (context, state) => const CreateAccountScreen(),
       ),
     ],
   );

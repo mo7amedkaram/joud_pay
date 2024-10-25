@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_otp_text_field/flutter_otp_text_field.dart';
+import 'package:go_router/go_router.dart';
 import 'package:joud_pay/features/auth/presentation/widgets/custom_backbutton.dart';
 
 class EnterOtpScreen extends StatelessWidget {
@@ -103,7 +104,7 @@ class EnterOtpScreen extends StatelessWidget {
       height: 48,
       child: ElevatedButton(
         onPressed: () {
-          // Implement confirmation logic
+          context.push("/create_account_screen");
         },
         style: ElevatedButton.styleFrom(
           backgroundColor: Color(0xFF44187D),
