@@ -25,7 +25,7 @@ abstract class AppRoute {
       ),
       GoRoute(
         path: "/get_location",
-        builder: (context, state) => const GetLocationScareen(),
+        builder: (context, state) => const GetLocationScreen(),
       ),
       GoRoute(
         path: "/select_sms_screen",
