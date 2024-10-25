@@ -16,6 +16,14 @@ abstract class AppStyles {
     fontWeight: FontWeight.w500,
     fontFamily: 'IBM Plex Sans',
   );
+  //-----------
+  static const styleMedium14 = TextStyle(
+    color: Colors.black,
+    fontSize: 14,
+    fontWeight: FontWeight.bold,
+    fontFamily: 'IBMPlexSansArabic',
+  );
+
   //-----------------
   static const styleSemiBold18 = TextStyle(
     color: Color(0xff2F1155),

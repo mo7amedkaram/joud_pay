@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_svg/flutter_svg.dart';
+import 'package:go_router/go_router.dart';
 
 import '../../../utils/app_style.dart';
 
@@ -39,7 +40,7 @@ class GetLocationScareen extends StatelessWidget {
             const SizedBox(
               height: 140,
             ),
-            const NextButton(),
+            const AllowAccessButton(),
           ],
         ),
       ),
@@ -47,8 +48,8 @@ class GetLocationScareen extends StatelessWidget {
   }
 }
 
-class NextButton extends StatelessWidget {
-  const NextButton({super.key});
+class AllowAccessButton extends StatelessWidget {
+  const AllowAccessButton({super.key});
 
   @override
   Widget build(BuildContext context) {
@@ -60,7 +61,7 @@ class NextButton extends StatelessWidget {
           shape: RoundedRectangleBorder(borderRadius: BorderRadius.circular(5)),
         ),
         onPressed: () {
-          //  context.push("/get_location");
+          context.push("/select_sms_screen");
         },
         child: const Text(
           'Allow access',
